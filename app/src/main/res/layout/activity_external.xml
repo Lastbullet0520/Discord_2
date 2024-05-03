@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="서울_인텔 인공지능 인재 양성 과정 2기 >"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:textAlignment="viewStart"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#0fffffff"
+        android:textSize="16sp"
+        android:text="검색하기"
+        android:textColor="#8fffffff"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add"
+        app:layout_constraintEnd_toStartOf="@id/btn_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginEnd="10dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#0fffffff"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintStart_toEndOf="@id/btn_search"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_action_name"
+        android:background="#0fffffff"
+
+        app:layout_constraintStart_toEndOf="@id/btn_add"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <LinearLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_search"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="v 확인해주세요!"
+            android:textSize="15sp"
+            android:textColor="#a0a0a0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 공지사항"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="v 무엇이든 물어보세요!"
+            android:textSize="15sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 동기에게-물어봐"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="v 열심히 교육받아요!"
+            android:textSize="15sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 인공지능-과정"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 앱-과정"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 프로젝트-과정"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="v 친해져요!"
+            android:textSize="15sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 점심-추천해요"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 오프더레코드"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 정보-공유해요"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="# 스터디실"
+            android:textSize="20sp"
+            android:textColor="#a0a0a0"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
